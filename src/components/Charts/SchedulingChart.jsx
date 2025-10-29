@@ -100,27 +100,27 @@ const SchedulingChart = () => {
               type="monotone"
               dataKey="hotDesking"
               stackId="1"
-              stroke="#3B82F6"
-              fill="#3B82F6"
+              stroke="#34d399" // emerald-400
+              fill="#34d399"
               fillOpacity={0.3}
             />
             <Line
               type="monotone"
               dataKey="calendar"
-              stroke="#1E40AF"
+              stroke="#059669" // emerald-600
               strokeWidth={3}
-              dot={{ fill: '#1E40AF', strokeWidth: 2, r: 4 }}
+              dot={{ fill: '#059669', strokeWidth: 2, r: 4 }}
             />
           </AreaChart>
         </ResponsiveContainer>
 
         <div className="flex justify-center space-x-6 mt-4">
           <div className="flex items-center space-x-2">
-            <div className="w-4 h-0.5 bg-blue-800"></div>
+            <div className="w-4 h-0.5 bg-emerald-700"></div>
             <span className="text-sm text-gray-600">Calendar</span>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="w-4 h-0.5 bg-blue-400"></div>
+            <div className="w-4 h-0.5 bg-emerald-400"></div>
             <span className="text-sm text-gray-600">Hot desking</span>
           </div>
         </div>
@@ -130,4 +130,5 @@ const SchedulingChart = () => {
 };
 
 export default SchedulingChart;
+
 

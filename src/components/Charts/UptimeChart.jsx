@@ -19,11 +19,11 @@ const UptimeChart = () => {
   ];
 
   const pieData = [
-    { name: 'Device Type 1', value: 35, color: '#8B5CF6' },
-    { name: 'Device Type 2', value: 25, color: '#A855F7' },
-    { name: 'Device Type 3', value: 20, color: '#C084FC' },
-    { name: 'Device Type 4', value: 15, color: '#D8B4FE' },
-    { name: 'Device Type 5', value: 5, color: '#E9D5FF' },
+    { name: 'Device Type 1', value: 35, color: '#10b981' }, // emerald-500
+    { name: 'Device Type 2', value: 25, color: '#34d399' }, // emerald-400
+    { name: 'Device Type 3', value: 20, color: '#6ee7b7' }, // emerald-300
+    { name: 'Device Type 4', value: 15, color: '#a7f3d0' }, // emerald-200
+    { name: 'Device Type 5', value: 5, color: '#d1fae5' },  // emerald-100
   ];
 
   return (
@@ -61,8 +61,8 @@ const UptimeChart = () => {
                   boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                 }}
               />
-              <Bar dataKey="device1" stackId="a" fill="#8B5CF6" radius={[0, 0, 4, 4]} />
-              <Bar dataKey="device2" stackId="a" fill="#A855F7" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="device1" stackId="a" fill="#10b981" radius={[0, 0, 4, 4]} />
+              <Bar dataKey="device2" stackId="a" fill="#34d399" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
@@ -107,4 +107,5 @@ const UptimeChart = () => {
 };
 
 export default UptimeChart;
+
 

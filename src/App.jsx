@@ -6,6 +6,8 @@ import DeviceHealth from './pages/DeviceHealth';
 import UsageInsights from './pages/UsageInsights';
 import Support from './pages/Support';
 import Settings from './pages/Settings';
+import './App.css'
+import './index.css'
 
 function App() {
   const [activeTab, setActiveTab] = useState('summary');

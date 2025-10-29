@@ -19,17 +19,20 @@ export default {
           800: '#075985',
           900: '#0c4a6e',
         },
+        // Retheme the app by mapping existing purple utility classes to a
+        // teal/emerald palette. This avoids changing component code that
+        // references bg-purple-*, text-purple-*, etc.
         purple: {
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea',
-          700: '#7c3aed',
-          800: '#6b21a8',
-          900: '#581c87',
+          50: '#ecfdf5',   // emerald-50
+          100: '#d1fae5',  // emerald-100
+          200: '#a7f3d0',  // emerald-200
+          300: '#6ee7b7',  // emerald-300
+          400: '#34d399',  // emerald-400
+          500: '#10b981',  // emerald-500 (primary accent)
+          600: '#059669',  // emerald-600
+          700: '#047857',  // emerald-700
+          800: '#065f46',  // emerald-800
+          900: '#064e3b',  // emerald-900
         }
       },
        border: "hsl(var(--border))",
@@ -41,4 +44,5 @@ export default {
   },
   plugins: [],
 }
+
 
